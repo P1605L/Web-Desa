@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #154212;
+  --color-primary-light: #2d5a27;
+  --color-primary-bg: #f3f8f2;
+  --color-primary-dark: #0a2508;
+  --color-secondary: #795900;
+  --color-secondary-light: #ffc641;
+  --color-secondary-bg: #fffbf0;
+  --color-accent: #3b6934;
+  --color-neutral-dark: #121c28;
+  
+  --font-display: 'Plus Jakarta Sans', 'Montserrat', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #fafbfc;
+  color: var(--color-neutral-dark);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(229, 231, 235, 0.5);
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
